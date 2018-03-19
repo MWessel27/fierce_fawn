@@ -12,7 +12,10 @@
 		89D60F071EF6045200526602 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89D60F051EF6045200526602 /* Main.storyboard */; };
 		89D60F091EF6045200526602 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89D60F081EF6045200526602 /* Assets.xcassets */; };
 		89D60F0C1EF6045200526602 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89D60F0A1EF6045200526602 /* LaunchScreen.storyboard */; };
-		89D60F141EF6051500526602 /* hustle-on.wav in Resources */ = {isa = PBXBuildFile; fileRef = 89D60F131EF6051500526602 /* hustle-on.wav */; };
+		CB16CD3F203CBB2C0050ADD6 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB16CD3E203CBB2C0050ADD6 /* UIViewExtensions.swift */; };
+		CB16CD41203CC05B0050ADD6 /* st.png in Resources */ = {isa = PBXBuildFile; fileRef = CB16CD40203CC05B0050ADD6 /* st.png */; };
+		CB35139B203E6324000C3B35 /* Cash.wav in Resources */ = {isa = PBXBuildFile; fileRef = CB35139A203E6323000C3B35 /* Cash.wav */; };
+		CB94A6D420430A36008B4CC5 /* hustle-mode.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CB94A6D220430A36008B4CC5 /* hustle-mode.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +26,10 @@
 		89D60F081EF6045200526602 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		89D60F0B1EF6045200526602 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89D60F0D1EF6045200526602 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		89D60F131EF6051500526602 /* hustle-on.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "hustle-on.wav"; path = "../../../../App Designs/Hustle Mode/Assets/hustle-on.wav"; sourceTree = "<group>"; };
+		CB16CD3E203CBB2C0050ADD6 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		CB16CD40203CC05B0050ADD6 /* st.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = st.png; path = Assets.xcassets/st.png; sourceTree = "<group>"; };
+		CB35139A203E6323000C3B35 /* Cash.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Cash.wav; sourceTree = "<group>"; };
+		CB94A6D320430A36008B4CC5 /* hustle-mode.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "hustle-mode.xcdatamodel"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +62,11 @@
 		89D60F001EF6045200526602 /* hustle-mode */ = {
 			isa = PBXGroup;
 			children = (
-				89D60F131EF6051500526602 /* hustle-on.wav */,
+				CB35139A203E6323000C3B35 /* Cash.wav */,
+				CB16CD40203CC05B0050ADD6 /* st.png */,
+				CB16CD3E203CBB2C0050ADD6 /* UIViewExtensions.swift */,
 				89D60F011EF6045200526602 /* AppDelegate.swift */,
+				CB94A6D220430A36008B4CC5 /* hustle-mode.xcdatamodeld */,
 				89D60F031EF6045200526602 /* ViewController.swift */,
 				89D60F051EF6045200526602 /* Main.storyboard */,
 				89D60F081EF6045200526602 /* Assets.xcassets */,
@@ -125,7 +134,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89D60F141EF6051500526602 /* hustle-on.wav in Resources */,
+				CB16CD41203CC05B0050ADD6 /* st.png in Resources */,
+				CB35139B203E6324000C3B35 /* Cash.wav in Resources */,
 				89D60F0C1EF6045200526602 /* LaunchScreen.storyboard in Resources */,
 				89D60F091EF6045200526602 /* Assets.xcassets in Resources */,
 				89D60F071EF6045200526602 /* Main.storyboard in Resources */,
@@ -140,7 +150,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				89D60F041EF6045200526602 /* ViewController.swift in Sources */,
+				CB16CD3F203CBB2C0050ADD6 /* UIViewExtensions.swift in Sources */,
 				89D60F021EF6045200526602 /* AppDelegate.swift in Sources */,
+				CB94A6D420430A36008B4CC5 /* hustle-mode.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,8 +328,22 @@
 				89D60F121EF6045200526602 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CB94A6D220430A36008B4CC5 /* hustle-mode.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CB94A6D320430A36008B4CC5 /* hustle-mode.xcdatamodel */,
+			);
+			currentVersion = CB94A6D320430A36008B4CC5 /* hustle-mode.xcdatamodel */;
+			path = "hustle-mode.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 89D60EF61EF6045200526602 /* Project object */;
 }
